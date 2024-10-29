@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: orderservice
+  cloud:
+    config:
+      uri: http://configserver:8888
+server:
+  port: 8083
+eureka:
+  client:
+    service-url:
+      defaultZone: http://registryserver:8761/eureka/
